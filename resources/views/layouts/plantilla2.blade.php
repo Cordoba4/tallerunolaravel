@@ -12,13 +12,18 @@
         <center>
         <table border=1>
             <tr>
-                <td colspan=2><center><b>#####</b></center></td>
+                <td colspan=2><center><b>@yield('Titulo') {{$No}}</b></center></td>
             </tr>
 
-            ###############
+            @for($i=1;$i<=10;$i++)
+             <tr>
+                <td><center><b>{{$No}}x{{$i}}</b></center></td>
+                <td><center><b>{{$No*$i}}</b></center></td>
+            </tr>
+            @endfor
 
             <tr>
-                <td colspan=2><center><b>#####</b></center></td>
+                <td colspan=2><center><b>@yield('pie')</b></center></td>
             </tr>
         </table>
         </center>
