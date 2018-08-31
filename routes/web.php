@@ -26,3 +26,6 @@ Route::get('/pagina1', function () {
 Route::get('/pagina2/{No}', function ($No) {
     return view('pagina2')->with('No',$No);
 });
+
+Route::resource('datos','DatosController');
+Route::resource('tabla','TablasController');
