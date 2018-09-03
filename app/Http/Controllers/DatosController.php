@@ -14,9 +14,10 @@ class DatosController extends Controller
     public function index()
     {
         return view('pagina1',[
-            'name' => 'Camilo Cordoba',
-            'tel' => '317-726-6681',
-            'email' => 'Cordoba4.com'
+
+            'name'=>'Camilo Cordoba',
+            'tel'=>'318-866-4816',
+            'email'=>'cordoba.com@gamil.com'
         ]);
     }
 

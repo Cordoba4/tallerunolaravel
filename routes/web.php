@@ -27,5 +27,21 @@ Route::get('/pagina2/{No}', function ($No) {
     return view('pagina2')->with('No',$No);
 });
 
+Route::get('/datos/usuario', function () {
+    return view('pagina11',[
+
+        'name'=>'Camilo Cordoba',
+        'tel'=>'318-866-4816',
+        'email'=>'cordoba.com@gamil.com'
+    ]);
+});
+
+Route::get('/tabla/{No}', function ($No) {
+    return view('pagina22')->with('No',$No);
+});
+
+
+
+
 Route::resource('datos','DatosController');
-Route::resource('tabla','TablasController');
+Route::resource('tablas','TablaController');

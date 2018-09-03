@@ -1,3 +1,4 @@
 @extends('layouts.plantilla2')
-@section('Titulo','tabla de multiplicar:')
-@section('pie','2018')
+@section('title','tabla de multiplicar:')
+@section('tabla','tabla de multiplicar:')
+@section('footer','2018')

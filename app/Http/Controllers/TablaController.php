@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TablasController extends Controller
+class TablaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +13,10 @@ class TablasController extends Controller
      */
     public function index()
     {
-        return view('pagina2',[
-            'No' =>8,
-           
+        return view('pagina22',[
+
+            'No'=> 9,
+          
         ]);
     }
 
@@ -49,7 +50,6 @@ class TablasController extends Controller
     public function show($id)
     {
         return view('pagina2')->with('No',$id);
-    
     }
 
     /**
